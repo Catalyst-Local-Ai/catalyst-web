@@ -1,0 +1,76 @@
+/* Custom CSS for the Catalyst-Local-AI website */
+
+/* Tailwind CSS classes */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #020617; /* slate-950 */
+    color: #e2e8f0; /* slate-200 */
+}
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.bg-card {
+    background-color: #1e293b; /* slate-800 */
+}
+.bg-secondary {
+    background-color: #0f172a; /* slate-900 */
+}
+.bg-primary {
+    background-color: #8b5cf6; /* violet-600 */
+}
+.bg-primary-dark {
+    background-color: #7c3aed; /* violet-700 */
+}
+.text-light {
+    color: #94a3b8; /* slate-400 */
+}
+.rounded-3xl {
+    border-radius: 1.5rem;
+}
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.transition-transform {
+    transition-property: transform;
+}
+.transform {
+    transform: scale(1);
+}
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+/* Keyframe animations for fade-in effects */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-fade-in-up {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+/* Animation delays for staggered effects */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+
+/* General icon styling */
+.lucide-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
